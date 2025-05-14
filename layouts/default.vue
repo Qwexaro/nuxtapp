@@ -1,17 +1,11 @@
 <template>
   <div>
-    <header class="bg-dark p-3">
-        <ul class="nav container">
-            <li class="nav-item"><NuxtLink to="/" class="nav-link text-white">Main</NuxtLink></li>
-            <li class="nav-item"><NuxtLink to="/contact" class="nav-link text-white">Contacts</NuxtLink></li>
-            <li class="nav-item"><NuxtLink to="/users/" class="nav-link text-white">Users</NuxtLink></li>
-        </ul>
-    </header>
+    <Header />
 
-    <div class="container py-5">
-    <slot></slot>
-    </div>
-
+    <main class="container mx-auto p-4">
+        <slot />
+    </main>
+    <Footer />
 </div>
 </template>
 

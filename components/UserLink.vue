@@ -2,7 +2,8 @@
 const { user } = defineProps(['user'])
 </script>
 <template>
-    <div class="card h-100 shadow-sm">
+    <div class="card border boder-orange-500 p-2 h-100 shadow-sm
+                bg-gradient-to-r from-white to-orange-100">
         <img :src="user.image" class="card-img-top" alt="User Image">
         <div class="card-body">
             <h5 class="card-title">{{ user.firstName }} {{ user.lastName }}</h5>

@@ -8,7 +8,7 @@
         </ul>
     </header>
     
-    <div class="container py-5">
+    <div class="container p-4 mx-auto">
     <slot></slot>
     </div>
     

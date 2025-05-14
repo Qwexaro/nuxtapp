@@ -16,7 +16,7 @@ const users = ref(data.value.users)
 <template>
   <div>
     <h1>All users</h1>
-    <ul class="d-flex justify-content-between flex-wrap list-unstyled gap-3">
+    <ul class="grid grid-cols-4 gap-3 flex-wrap list-unstyled">
         <li v-for="user in users" :key="user.id">
             <UserLink :user="user"/>
         </li>
