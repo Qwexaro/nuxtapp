@@ -77,7 +77,7 @@ const categorySlug = computed(() => {
         {{ attributes.description }}
       </p>
       
-      <div v-html="attributes.content" class="content"></div>
+      <div v-html="attributes.content" class="blog-content"></div>
     </div>
 
     <div class="mt-12 pt-6 border-t flex flex-wrap gap-4">
@@ -99,39 +99,59 @@ const categorySlug = computed(() => {
 </template>
 
 <style scoped>
-.content {
-  @apply text-gray-800 leading-relaxed;
+.blog-content h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
-.content h2 {
-  @apply text-2xl font-bold mt-8 mb-4;
+.blog-content h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
 }
 
-.content h3 {
-  @apply text-xl font-semibold mt-6 mb-3;
+.blog-content p {
+  margin-bottom: 1rem;
+  color: #1f2937;
+  line-height: 1.75;
 }
 
-.content p {
-  @apply mb-4;
+.blog-content ul, .blog-content ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
 }
 
-.content ul, .content ol {
-  @apply pl-6 mb-4;
+.blog-content li {
+  margin-bottom: 0.25rem;
 }
 
-.content li {
-  @apply mb-1;
+.blog-content blockquote {
+  border-left: 4px solid #f97316;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: #4b5563;
+  font-style: italic;
 }
 
-.content blockquote {
-  @apply border-l-4 border-orange-400 pl-4 py-2 my-4 text-gray-700 italic;
+.blog-content img {
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  max-width: 100%;
 }
 
-.content img {
-  @apply rounded-lg my-4 max-w-full;
+.blog-content a {
+  color: #2563eb;
+  text-decoration: underline;
 }
 
-.content a {
-  @apply text-blue-600 hover:underline;
+.blog-content a:hover {
+  color: #1d4ed8;
 }
 </style>
